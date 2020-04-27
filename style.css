@@ -1,0 +1,105 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Fredoka One', cursive;
+}
+
+.backgroundAnimation{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+/* referenced https://www.w3schools.com/howto/howto_css_center_button.asp */
+.btn{
+  position: absolute;
+  top: 80%;
+  transform: translateX(60%);
+  padding: 10px 0px;
+  font-size: 5vmin;
+  color: #ffffff;
+  background-color: #a66f6f;
+  border-left: none;
+  border-right: none;
+  border-top: 5px solid #ffffff;
+  border-bottom: 5px solid #ffffff;
+  animation: fadeInAnimation ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transition: 1s;
+}
+
+.btn: hover{
+  text-shadow: 0 0 3px #cccccc;
+}
+
+.mainContainer{
+  margin: 20vmin;
+  margin-top: 15vmin;
+  margin-bottom: 80vmin;
+  background-color: #ffffff;
+}
+
+.btn2{
+  position: relative;
+  top: 80%;
+  transform: translateX(29%);
+  padding: 10px 0px;
+  font-size: 5vmin;
+  color: #ffffff;
+  background-color: #6b0000;
+  border-left: none;
+  border-right: none;
+  border-top: 5px solid #ffffff;
+  border-bottom: 5px solid #ffffff;
+  animation: fadeInAnimation ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  margin-bottom: 10vmin;
+}
+
+.backgroundAnimation2{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+
+/* referenced https://css-tricks.com/seamless-responsive-photo-grid/ */
+#pictures{
+  padding: 10px;
+  grid-column: span 5;
+  line-height: 0;
+  column-count: 5;
+  column-gap: 10px;
+  opacity: 1;
+}
+
+#pictures img{
+  width: 100%;
+  height: auto;
+  transition: 1s;
+  animation: fadeInAnimation ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#pictures img: hover{
+  border: solid 5px #cccccc;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
