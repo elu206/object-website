@@ -17,7 +17,7 @@
 .btn{
   position: absolute;
   top: 80%;
-  transform: translateX(60%);
+  transform: translateX(55%);
   padding: 10px 0px;
   font-size: 5vmin;
   color: #ffffff;
@@ -46,7 +46,7 @@
 .btn2{
   position: relative;
   top: 80%;
-  transform: translateX(29%);
+  transform: translateX(26%);
   padding: 10px 0px;
   font-size: 5vmin;
   color: #ffffff;
@@ -70,7 +70,6 @@
   overflow: hidden;
   z-index: -1;
 }
-
 
 /* referenced https://css-tricks.com/seamless-responsive-photo-grid/ */
 #pictures{
